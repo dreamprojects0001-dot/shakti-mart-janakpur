@@ -33,15 +33,15 @@ const AboutStrip = () => {
           <div>
             <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground font-medium">Our Story</span>
             <h2 className="font-serif-display italic font-bold text-3xl lg:text-4xl text-foreground mt-4">
-              Janakpur's Favourite
+              Katahariya's Favourite
               <br />
               Local Mart
             </h2>
             <p className="text-muted-foreground mt-6 leading-relaxed max-w-lg">
-              Shakti Mart has been serving the Janakpur community with quality products at fair prices. 
+              Shakti Mart has been serving the Katahariya community with quality products at fair prices. 
               We believe in honest business — no hidden costs, no compromises. Just a clean, well-stocked 
-              store where every family can find what they need. From fresh vegetables sourced from local 
-              farmers to trusted household brands, we're the store your neighbour recommends.
+              store where every family can find what they need. From daily use groceries to trusted household 
+              brands, we're the store your neighbour recommends.
             </p>
             <hr className="my-8 border-border" />
             <div className="flex gap-10">

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import logoSrc from "@/assets/shakti_mart.png";
 
 const navLinks = [
   { label: "Shop", href: "#categories" },
@@ -24,8 +25,8 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="font-serif-display italic font-bold text-2xl text-foreground">
-          Shakti Mart
+        <a href="#" className="flex items-center gap-2">
+          <img src={logoSrc} alt="Shakti Mart" className="h-10 w-auto" />
         </a>
 
         {/* Desktop nav */}

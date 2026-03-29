@@ -5,12 +5,12 @@ const reviews = [
     area: "Ramanand Chowk",
   },
   {
-    text: "Finally a store in Janakpur that's clean, well-organized, and has everything in stock. My kids love going there for snacks after school.",
+    text: "Finally a store in Katahariya that's clean, well-organized, and has everything in stock. My kids love going there for snacks after school.",
     name: "Rajesh Kumar Jha",
     area: "Bhanu Chowk",
   },
   {
-    text: "Best mustard oil prices in the city. I compared everywhere. Shakti Mart is genuinely affordable — and the quality is excellent.",
+    text: "Best mustard oil prices in town. I compared everywhere. Shakti Mart is genuinely affordable — and the quality is excellent.",
     name: "Meena Kumari",
     area: "Station Road",
   },

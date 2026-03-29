@@ -12,15 +12,15 @@ const LocationHours = () => {
             <div className="mt-8 space-y-5 text-sm">
               <div>
                 <h4 className="font-semibold text-foreground">Address</h4>
-                <p className="text-muted-foreground mt-1">Janakpur, Madhesh Pradesh, Nepal</p>
+                <p className="text-muted-foreground mt-1">Katahariya-9, Rautahat, Nepal</p>
               </div>
               <div>
                 <h4 className="font-semibold text-foreground">Hours</h4>
-                <p className="text-muted-foreground mt-1">7:00 AM – 9:00 PM · Open 7 days a week</p>
+                <p className="text-muted-foreground mt-1">7:30 AM – 8:30 PM · Open 7 days a week</p>
               </div>
               <div>
                 <h4 className="font-semibold text-foreground">Phone</h4>
-                <p className="text-muted-foreground mt-1">+977-41-XXXXXX</p>
+                <p className="text-muted-foreground mt-1">9820064964</p>
               </div>
             </div>
             <a

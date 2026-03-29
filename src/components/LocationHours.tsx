@@ -22,7 +22,10 @@ const LocationHours = () => {
                 <h4 className="font-semibold text-foreground">Phone</h4>
                 <p className="text-muted-foreground mt-1">9820064964</p>
               </div>
-            </div>
+              <div>
+                <h4 className="font-semibold text-foreground">Email</h4>
+                <p className="text-muted-foreground mt-1">shaktimart.com.np@gmail.com</p>
+              </div>
             <a
               href="https://maps.app.goo.gl/7rTAKXiF4DkY4cyx8"
               target="_blank"
@@ -36,7 +39,7 @@ const LocationHours = () => {
           {/* Map */}
           <div className="rounded-lg border border-border overflow-hidden" style={{ filter: "sepia(0.3) contrast(1.1)" }}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28534.81511423776!2d85.9059!3d26.7288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ec6556fcff7e3d%3A0x29e739c0e1a06e7a!2sJanakpur%2C%20Nepal!5e0!3m2!1sen!2snp!4v1700000000000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14264.5!2d85.2833!3d27.0167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb12e5a3b2c2ed%3A0x1234567890abcdef!2sKatahariya%2C%20Rautahat%2C%20Nepal!5e0!3m2!1sen!2snp!4v1700000000000"
               width="100%"
               height="400"
               style={{ border: 0 }}

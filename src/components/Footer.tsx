@@ -1,3 +1,5 @@
+import logoSrc from "@/assets/shakti_mart.png";
+
 const quickLinks = ["Shop", "Offers", "About", "Find Store", "Shakti Club"];
 const Footer = () => {
   return (
@@ -6,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <span className="font-serif-display italic font-bold text-2xl text-card">Shakti Mart</span>
+            <img src={logoSrc} alt="Shakti Mart" className="h-12 w-auto brightness-0 invert" />
             <p className="text-footer-muted text-sm mt-3 leading-relaxed">
               सबैको पसल — Everyone's store.
             </p>
@@ -46,10 +48,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-sm text-card mb-4">Contact</h4>
             <ul className="space-y-2.5 text-footer-muted text-sm">
-              <li>Janakpur, Madhesh Pradesh</li>
+              <li>Katahariya-9, Rautahat</li>
               <li>Nepal</li>
-              <li>+977-41-XXXXXX</li>
-              <li>info@shaktimart.com.np</li>
+              <li>9820064964</li>
+              <li>shaktimart.com.np@gmail.com</li>
             </ul>
           </div>
         </div>
@@ -59,7 +61,7 @@ const Footer = () => {
       <div className="border-t border-footer-muted/20">
         <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-2">
           <p className="text-footer-muted text-xs">© 2026 Shakti Mart. All rights reserved.</p>
-          <p className="text-footer-muted text-xs">Made with love in Janakpur ♥</p>
+          <p className="text-footer-muted text-xs">Made with love in Katahariya ♥</p>
         </div>
       </div>
     </footer>

@@ -1,10 +1,10 @@
 const categories = [
-  { name: "Fresh Produce", count: "800+ items", image: "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=600&h=450&fit=crop" },
+  { name: "Daily Use Groceries", count: "800+ items", image: "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=600&h=450&fit=crop" },
   { name: "Dairy & Bakery", count: "400+ items", image: "https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=600&h=450&fit=crop" },
   { name: "Household Care", count: "600+ items", image: "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600&h=450&fit=crop" },
   { name: "Snacks & Beverages", count: "1,200+ items", image: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=600&h=450&fit=crop" },
   { name: "Personal Care", count: "500+ items", image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&h=450&fit=crop" },
-  { name: "Electronics & Accessories", count: "300+ items", image: "https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=600&h=450&fit=crop" },
+  { name: "Ice Creams", count: "300+ items", image: "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=600&h=450&fit=crop" },
 ];
 
 const CategoryGrid = () => {

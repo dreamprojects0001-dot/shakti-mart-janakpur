@@ -1,10 +1,10 @@
 const categories = [
-  "Fresh Produce",
+  "Daily Use Groceries",
   "Dairy & Bakery",
   "Household Care",
   "Snacks & Beverages",
   "Personal Care",
-  "Electronics",
+  "Ice Creams",
   "Spices & Grains",
   "Frozen Foods",
 ];
@@ -28,7 +28,7 @@ const Hero = () => {
             closer than you think.
           </h1>
           <p className="text-muted-foreground text-base lg:text-lg max-w-lg leading-relaxed">
-            Janakpur's trusted neighbourhood supermart — quality groceries, household essentials, and everyday products at the best prices.
+            Katahariya's trusted neighbourhood supermart — quality groceries, household essentials, and everyday products at the best prices.
           </p>
           <div className="flex flex-wrap gap-4">
             <a

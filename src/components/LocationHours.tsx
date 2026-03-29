@@ -26,6 +26,7 @@ const LocationHours = () => {
                 <h4 className="font-semibold text-foreground">Email</h4>
                 <p className="text-muted-foreground mt-1">shaktimart.com.np@gmail.com</p>
               </div>
+            </div>
             <a
               href="https://maps.app.goo.gl/7rTAKXiF4DkY4cyx8"
               target="_blank"

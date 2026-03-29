@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3">
           <img src={logoSrc} alt="Shakti Mart" className="h-10 w-auto" />
-          <span className="font-fraunces italic font-bold text-xl text-foreground">Shakti Mart</span>
+          <span className="font-serif-display italic font-bold text-xl text-foreground">Shakti Mart</span>
         </a>
 
         {/* Desktop nav */}

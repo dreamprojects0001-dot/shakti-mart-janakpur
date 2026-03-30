@@ -9,20 +9,37 @@ import LoyaltyBanner from "@/components/LoyaltyBanner";
 import MembershipForm from "@/components/MembershipForm";
 import LocationHours from "@/components/LocationHours";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground font-body">
       <Navbar />
       <Hero />
-      <CategoryGrid />
-      <ValueProps />
-      <FeaturedOffers />
-      <AboutStrip />
-      <Testimonials />
-      <LoyaltyBanner />
-      <MembershipForm />
-      <LocationHours />
+      <ScrollReveal>
+        <CategoryGrid />
+      </ScrollReveal>
+      <ScrollReveal>
+        <ValueProps />
+      </ScrollReveal>
+      <ScrollReveal>
+        <FeaturedOffers />
+      </ScrollReveal>
+      <ScrollReveal>
+        <AboutStrip />
+      </ScrollReveal>
+      <ScrollReveal>
+        <Testimonials />
+      </ScrollReveal>
+      <ScrollReveal>
+        <LoyaltyBanner />
+      </ScrollReveal>
+      <ScrollReveal>
+        <MembershipForm />
+      </ScrollReveal>
+      <ScrollReveal>
+        <LocationHours />
+      </ScrollReveal>
       <Footer />
     </div>
   );

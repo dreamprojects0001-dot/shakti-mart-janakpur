@@ -21,6 +21,7 @@ const Index = () => {
       <AboutStrip />
       <Testimonials />
       <LoyaltyBanner />
+      <MembershipForm />
       <LocationHours />
       <Footer />
     </div>

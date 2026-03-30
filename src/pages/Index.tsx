@@ -10,10 +10,12 @@ import MembershipForm from "@/components/MembershipForm";
 import LocationHours from "@/components/LocationHours";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
+import FloatingParticles from "@/components/FloatingParticles";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground font-body">
+    <div className="relative min-h-screen bg-background text-foreground font-body">
+      <FloatingParticles />
       <Navbar />
       <Hero />
       <ScrollReveal>

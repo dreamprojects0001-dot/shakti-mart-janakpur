@@ -77,3 +77,69 @@
 .card-lift:hover {
   transform: translateY(-3px);
 }
+
+/* Floating particles background */
+@keyframes float-drift {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.18;
+  }
+  25% {
+    transform: translate(30px, -40px) scale(1.1);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translate(-20px, -80px) scale(0.95);
+    opacity: 0.12;
+  }
+  75% {
+    transform: translate(15px, -30px) scale(1.05);
+    opacity: 0.22;
+  }
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: hsl(var(--primary) / 0.12);
+  filter: blur(1px);
+  animation: float-drift linear infinite;
+}
+
+.particle-1 {
+  width: 6px; height: 6px;
+  top: 15%; left: 8%;
+  animation-duration: 18s;
+}
+.particle-2 {
+  width: 4px; height: 4px;
+  top: 40%; left: 85%;
+  animation-duration: 22s;
+  animation-delay: -4s;
+}
+.particle-3 {
+  width: 8px; height: 8px;
+  top: 65%; left: 20%;
+  animation-duration: 25s;
+  animation-delay: -8s;
+  background: hsl(var(--primary) / 0.08);
+}
+.particle-4 {
+  width: 5px; height: 5px;
+  top: 25%; left: 60%;
+  animation-duration: 20s;
+  animation-delay: -12s;
+}
+.particle-5 {
+  width: 3px; height: 3px;
+  top: 80%; left: 70%;
+  animation-duration: 16s;
+  animation-delay: -6s;
+}
+.particle-6 {
+  width: 7px; height: 7px;
+  top: 50%; left: 45%;
+  animation-duration: 28s;
+  animation-delay: -15s;
+  background: hsl(var(--primary) / 0.06);
+}

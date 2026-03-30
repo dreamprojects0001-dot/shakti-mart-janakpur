@@ -6,6 +6,7 @@ import FeaturedOffers from "@/components/FeaturedOffers";
 import AboutStrip from "@/components/AboutStrip";
 import Testimonials from "@/components/Testimonials";
 import LoyaltyBanner from "@/components/LoyaltyBanner";
+import MembershipForm from "@/components/MembershipForm";
 import LocationHours from "@/components/LocationHours";
 import Footer from "@/components/Footer";
 
@@ -20,6 +21,7 @@ const Index = () => {
       <AboutStrip />
       <Testimonials />
       <LoyaltyBanner />
+      <MembershipForm />
       <LocationHours />
       <Footer />
     </div>

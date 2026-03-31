@@ -23,14 +23,16 @@ const Navbar = () => {
       <div
         className={`max-w-4xl mx-auto flex items-center justify-between px-6 py-3 rounded-2xl transition-all duration-500 ${
           scrolled
-            ? "bg-white/15 backdrop-blur-xl shadow-lg shadow-black/10 border border-white/20"
+            ? "bg-foreground/90 backdrop-blur-xl shadow-lg shadow-black/20 border border-foreground/10"
             : "bg-white/10 backdrop-blur-md border border-white/10"
         }`}
       >
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2">
-          <img src={logoSrc} alt="Shakti Mart" className="h-9 w-auto" />
-          <span className="font-serif-display italic font-bold text-lg text-white drop-shadow-sm">
+        <a href="#" className="flex items-center gap-2 group">
+          <img src={logoSrc} alt="Shakti Mart" className="h-9 w-auto transition-transform duration-300 group-hover:scale-110" />
+          <span className={`font-serif-display italic font-bold text-lg drop-shadow-sm transition-colors duration-500 ${
+            scrolled ? "text-primary-foreground" : "text-white"
+          }`}>
             Shakti Mart
           </span>
         </a>
@@ -41,14 +43,22 @@ const Navbar = () => {
             <a
               key={link.label}
               href={link.href}
-              className="text-sm font-medium text-white/70 hover:text-white transition-colors"
+              className={`text-sm font-medium transition-colors duration-300 ${
+                scrolled
+                  ? "text-primary-foreground/70 hover:text-primary-foreground"
+                  : "text-white/70 hover:text-white"
+              }`}
             >
               {link.label}
             </a>
           ))}
           <a
             href="#location"
-            className="bg-white/20 backdrop-blur-sm text-white text-sm font-medium px-5 py-2 rounded-full hover:bg-white/30 transition-all border border-white/20"
+            className={`text-sm font-medium px-5 py-2 rounded-full transition-all duration-300 border ${
+              scrolled
+                ? "bg-primary text-primary-foreground border-primary hover:brightness-110 hover:scale-105"
+                : "bg-white/20 backdrop-blur-sm text-white border-white/20 hover:bg-white/30 hover:scale-105"
+            }`}
           >
             Visit Us →
           </a>
@@ -60,15 +70,15 @@ const Navbar = () => {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <span className={`block w-5 h-0.5 bg-white transition-transform ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-          <span className={`block w-5 h-0.5 bg-white transition-opacity ${menuOpen ? "opacity-0" : ""}`} />
-          <span className={`block w-5 h-0.5 bg-white transition-transform ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          <span className={`block w-5 h-0.5 transition-transform ${scrolled ? "bg-primary-foreground" : "bg-white"} ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
+          <span className={`block w-5 h-0.5 transition-opacity ${scrolled ? "bg-primary-foreground" : "bg-white"} ${menuOpen ? "opacity-0" : ""}`} />
+          <span className={`block w-5 h-0.5 transition-transform ${scrolled ? "bg-primary-foreground" : "bg-white"} ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </div>
 
       {/* Mobile drawer */}
       <div
-        className={`md:hidden fixed inset-0 top-[76px] bg-black/80 backdrop-blur-xl transition-transform duration-300 ${
+        className={`md:hidden fixed inset-0 top-[76px] bg-foreground/95 backdrop-blur-xl transition-transform duration-300 ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -78,7 +88,7 @@ const Navbar = () => {
               key={link.label}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="text-lg font-medium text-white"
+              className="text-lg font-medium text-primary-foreground"
             >
               {link.label}
             </a>
@@ -86,7 +96,7 @@ const Navbar = () => {
           <a
             href="#location"
             onClick={() => setMenuOpen(false)}
-            className="bg-white/20 backdrop-blur-sm text-white text-sm font-medium px-5 py-2.5 rounded-full text-center hover:bg-white/30 transition-all border border-white/20 mt-4"
+            className="bg-primary text-primary-foreground text-sm font-medium px-5 py-2.5 rounded-full text-center hover:brightness-110 transition-all mt-4"
           >
             Visit Us →
           </a>

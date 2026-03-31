@@ -1,4 +1,4 @@
-import logoSrc from "@/assets/shakti_mart.png";
+import logoSrc from "@/assets/shakti_mart_nobg.png";
 
 const quickLinks = ["Shop", "Offers", "About", "Find Store", "Shakti Club"];
 const Footer = () => {

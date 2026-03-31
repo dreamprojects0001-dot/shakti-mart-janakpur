@@ -13,13 +13,12 @@ const categories = [
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col">
-      {/* Full background image with subtle zoom animation */}
+    <section className="relative min-h-screen flex flex-col overflow-hidden">
+      {/* Full background image with parallax */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <img
-          src={heroStoreBg}
-          alt="Shakti Mart Store"
-          className="w-full h-full object-cover animate-hero-zoom"
+        <div
+          className="absolute inset-[-10%] bg-fixed bg-center bg-cover animate-hero-zoom"
+          style={{ backgroundImage: `url(${heroStoreBg})`, backgroundAttachment: 'fixed' }}
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />

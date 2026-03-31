@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logoSrc from "@/assets/shakti_mart_nobg.png";
+import logoSrc from "@/assets/shakti_mart_new.png";
 
 const navLinks = [
   { label: "Shop", href: "#categories" },
@@ -19,9 +19,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 px-4 pt-4">
+    <nav className="fixed top-0 left-0 right-0 z-50 px-4 pt-3">
       <div
-        className={`max-w-4xl mx-auto flex items-center justify-between px-6 py-3 rounded-2xl transition-all duration-500 ${
+        className={`max-w-4xl mx-auto flex items-center justify-between px-5 py-2 rounded-2xl transition-all duration-500 ${
           scrolled
             ? "bg-foreground/90 backdrop-blur-xl shadow-lg shadow-black/20 border border-foreground/10"
             : "bg-white/10 backdrop-blur-md border border-white/10"
@@ -29,7 +29,7 @@ const Navbar = () => {
       >
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
-          <img src={logoSrc} alt="Shakti Mart" className="h-9 w-auto transition-transform duration-300 group-hover:scale-110" />
+          <img src={logoSrc} alt="Shakti Mart" className="h-8 w-auto transition-transform duration-300 group-hover:scale-110" />
           <span className={`font-serif-display italic font-bold text-lg drop-shadow-sm transition-colors duration-500 ${
             scrolled ? "text-primary-foreground" : "text-white"
           }`}>

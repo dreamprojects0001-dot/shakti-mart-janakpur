@@ -1,4 +1,3 @@
-import { ChevronDown } from "lucide-react";
 import heroStoreBg from "@/assets/hero-store.png";
 
 const categories = [
@@ -15,15 +14,17 @@ const categories = [
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex flex-col">
-      {/* Full background image */}
-      <div className="absolute inset-0 z-0">
+      {/* Full background image with subtle zoom animation */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <img
           src={heroStoreBg}
           alt="Shakti Mart Store"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover animate-hero-zoom"
         />
-        {/* Dark overlay for text readability */}
+        {/* Dark overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+        {/* Animated shimmer overlay */}
+        <div className="absolute inset-0 animate-shimmer-sweep pointer-events-none" />
       </div>
 
       {/* Content */}
@@ -44,13 +45,13 @@ const Hero = () => {
         <div className="flex flex-wrap gap-4 mt-8 justify-center">
           <a
             href="#categories"
-            className="bg-primary text-primary-foreground font-medium px-7 py-3 rounded-full hover:opacity-90 transition-opacity text-sm"
+            className="bg-primary text-primary-foreground font-medium px-7 py-3 rounded-full text-sm transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg hover:shadow-primary/30 active:scale-95 active:brightness-125"
           >
             Explore Products
           </a>
           <a
             href="#location"
-            className="border border-white/30 text-white font-medium px-7 py-3 rounded-full hover:bg-white/10 transition-colors text-sm backdrop-blur-sm"
+            className="border border-white/30 text-white font-medium px-7 py-3 rounded-full text-sm backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white/15 hover:border-white/50 active:scale-95 active:bg-white/25"
           >
             Our Location
           </a>

@@ -29,7 +29,7 @@ const Navbar = () => {
       >
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
-          <img src={logoSrc} alt="Shakti Mart" className="h-9 w-auto transition-transform duration-300 group-hover:scale-110" />
+          <img src={logoSrc} alt="Shakti Mart" className="h-8 w-auto transition-transform duration-300 group-hover:scale-110" />
           <span className={`font-serif-display italic font-bold text-lg drop-shadow-sm transition-colors duration-500 ${
             scrolled ? "text-primary-foreground" : "text-white"
           }`}>

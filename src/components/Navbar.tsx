@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logoSrc from "@/assets/shakti_mart.png";
+import logoSrc from "@/assets/shakti_mart_nobg.png";
 
 const navLinks = [
   { label: "Shop", href: "#categories" },
@@ -19,31 +19,36 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-card shadow-sm" : "bg-transparent"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-3">
-          <img src={logoSrc} alt="Shakti Mart" className="h-10 w-auto" />
-          <span className="font-serif-display italic font-bold text-xl text-foreground">Shakti Mart</span>
+    <nav className="fixed top-0 left-0 right-0 z-50 px-4 pt-4">
+      <div
+        className={`max-w-4xl mx-auto flex items-center justify-between px-6 py-3 rounded-2xl transition-all duration-500 ${
+          scrolled
+            ? "bg-white/15 backdrop-blur-xl shadow-lg shadow-black/10 border border-white/20"
+            : "bg-white/10 backdrop-blur-md border border-white/10"
+        }`}
+      >
+        {/* Logo */}
+        <a href="#" className="flex items-center gap-2">
+          <img src={logoSrc} alt="Shakti Mart" className="h-9 w-auto" />
+          <span className="font-serif-display italic font-bold text-lg text-white drop-shadow-sm">
+            Shakti Mart
+          </span>
         </a>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors"
+              className="text-sm font-medium text-white/70 hover:text-white transition-colors"
             >
               {link.label}
             </a>
           ))}
           <a
             href="#location"
-            className="bg-primary text-primary-foreground text-sm font-medium px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity"
+            className="bg-white/20 backdrop-blur-sm text-white text-sm font-medium px-5 py-2 rounded-full hover:bg-white/30 transition-all border border-white/20"
           >
             Visit Us →
           </a>
@@ -55,15 +60,15 @@ const Navbar = () => {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <span className={`block w-5 h-0.5 bg-foreground transition-transform ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-          <span className={`block w-5 h-0.5 bg-foreground transition-opacity ${menuOpen ? "opacity-0" : ""}`} />
-          <span className={`block w-5 h-0.5 bg-foreground transition-transform ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          <span className={`block w-5 h-0.5 bg-white transition-transform ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
+          <span className={`block w-5 h-0.5 bg-white transition-opacity ${menuOpen ? "opacity-0" : ""}`} />
+          <span className={`block w-5 h-0.5 bg-white transition-transform ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </div>
 
       {/* Mobile drawer */}
       <div
-        className={`md:hidden fixed inset-0 top-[64px] bg-card transition-transform duration-300 ${
+        className={`md:hidden fixed inset-0 top-[76px] bg-black/80 backdrop-blur-xl transition-transform duration-300 ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -73,7 +78,7 @@ const Navbar = () => {
               key={link.label}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="text-lg font-medium text-foreground"
+              className="text-lg font-medium text-white"
             >
               {link.label}
             </a>
@@ -81,7 +86,7 @@ const Navbar = () => {
           <a
             href="#location"
             onClick={() => setMenuOpen(false)}
-            className="bg-primary text-primary-foreground text-sm font-medium px-5 py-2.5 rounded-full text-center hover:opacity-90 transition-opacity mt-4"
+            className="bg-white/20 backdrop-blur-sm text-white text-sm font-medium px-5 py-2.5 rounded-full text-center hover:bg-white/30 transition-all border border-white/20 mt-4"
           >
             Visit Us →
           </a>

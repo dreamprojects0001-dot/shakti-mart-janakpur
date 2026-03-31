@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <img src={logoSrc} alt="Shakti Mart" className="h-12 w-auto brightness-0 invert" />
+            <img src={logoSrc} alt="Shakti Mart" className="h-14 w-auto" />
             <p className="text-footer-muted text-sm mt-3 leading-relaxed">
-              सबैको पसल — Everyone's store.
+              Shakti Mart
             </p>
             <div className="flex gap-4 mt-6">
               {/* Facebook */}

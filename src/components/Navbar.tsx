@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logoSrc from "@/assets/shakti_mart_nobg.png";
+import logoSrc from "@/assets/shakti_mart_new.png";
 
 const navLinks = [
   { label: "Shop", href: "#categories" },

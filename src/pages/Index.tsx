@@ -23,28 +23,29 @@ const Index = () => {
         <BodyBackground />
         <ScrollReveal>
           <CategoryGrid />
-      </ScrollReveal>
-      <ScrollReveal>
-        <ValueProps />
-      </ScrollReveal>
-      <ScrollReveal>
-        <FeaturedOffers />
-      </ScrollReveal>
-      <ScrollReveal>
-        <AboutStrip />
-      </ScrollReveal>
-      <ScrollReveal>
-        <Testimonials />
-      </ScrollReveal>
-      <ScrollReveal>
-        <LoyaltyBanner />
-      </ScrollReveal>
-      <ScrollReveal>
-        <MembershipForm />
-      </ScrollReveal>
-      <ScrollReveal>
-        <LocationHours />
-      </ScrollReveal>
+        </ScrollReveal>
+        <ScrollReveal>
+          <ValueProps />
+        </ScrollReveal>
+        <ScrollReveal>
+          <FeaturedOffers />
+        </ScrollReveal>
+        <ScrollReveal>
+          <AboutStrip />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Testimonials />
+        </ScrollReveal>
+        <ScrollReveal>
+          <LoyaltyBanner />
+        </ScrollReveal>
+        <ScrollReveal>
+          <MembershipForm />
+        </ScrollReveal>
+        <ScrollReveal>
+          <LocationHours />
+        </ScrollReveal>
+      </div>
       <Footer />
     </div>
   );

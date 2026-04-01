@@ -17,8 +17,8 @@ const Hero = () => {
       {/* Full background image with parallax */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div
-          className="absolute inset-[-10%] bg-fixed bg-center bg-cover animate-hero-zoom"
-          style={{ backgroundImage: `url(${heroStoreBg})`, backgroundAttachment: 'fixed' }}
+          className="absolute inset-0 bg-fixed bg-center bg-cover"
+          style={{ backgroundImage: `url(${heroStoreBg})` }}
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />

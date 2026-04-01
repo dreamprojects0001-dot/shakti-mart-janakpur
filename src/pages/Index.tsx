@@ -11,6 +11,7 @@ import LocationHours from "@/components/LocationHours";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import FloatingParticles from "@/components/FloatingParticles";
+import BodyBackground from "@/components/BodyBackground";
 
 const Index = () => {
   return (
@@ -18,30 +19,33 @@ const Index = () => {
       <FloatingParticles />
       <Navbar />
       <Hero />
-      <ScrollReveal>
-        <CategoryGrid />
-      </ScrollReveal>
-      <ScrollReveal>
-        <ValueProps />
-      </ScrollReveal>
-      <ScrollReveal>
-        <FeaturedOffers />
-      </ScrollReveal>
-      <ScrollReveal>
-        <AboutStrip />
-      </ScrollReveal>
-      <ScrollReveal>
-        <Testimonials />
-      </ScrollReveal>
-      <ScrollReveal>
-        <LoyaltyBanner />
-      </ScrollReveal>
-      <ScrollReveal>
-        <MembershipForm />
-      </ScrollReveal>
-      <ScrollReveal>
-        <LocationHours />
-      </ScrollReveal>
+      <div className="relative">
+        <BodyBackground />
+        <ScrollReveal>
+          <CategoryGrid />
+        </ScrollReveal>
+        <ScrollReveal>
+          <ValueProps />
+        </ScrollReveal>
+        <ScrollReveal>
+          <FeaturedOffers />
+        </ScrollReveal>
+        <ScrollReveal>
+          <AboutStrip />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Testimonials />
+        </ScrollReveal>
+        <ScrollReveal>
+          <LoyaltyBanner />
+        </ScrollReveal>
+        <ScrollReveal>
+          <MembershipForm />
+        </ScrollReveal>
+        <ScrollReveal>
+          <LocationHours />
+        </ScrollReveal>
+      </div>
       <Footer />
     </div>
   );

@@ -30,13 +30,13 @@ const CategoryGrid = () => {
                 src={cat.image}
                 alt={cat.name}
                 loading="lazy"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-125"
               />
-              <div className="absolute inset-0 bg-card/60" />
-              <div className="absolute bottom-0 left-0 right-0 p-5">
+              <div className="absolute inset-0 bg-card/60 transition-all duration-500 group-hover:bg-card/40" />
+              <div className="absolute bottom-0 left-0 right-0 p-5 transition-transform duration-500 group-hover:translate-y-[-4px]">
                 <h3 className="font-serif-display italic text-xl text-foreground">{cat.name}</h3>
                 <p className="text-muted-foreground text-sm mt-1">{cat.count}</p>
-                <span className="text-primary text-sm font-medium mt-2 opacity-0 group-hover:opacity-100 transition-opacity block">
+                <span className="text-primary text-sm font-medium mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 block">
                   Shop now →
                 </span>
               </div>

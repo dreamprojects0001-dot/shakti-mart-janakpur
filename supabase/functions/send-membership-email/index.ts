@@ -26,6 +26,12 @@ serve(async (req) => {
       throw new Error("RESEND_API_KEY is not set");
     }
 
+    const nepalTime = new Date().toLocaleString("en-US", {
+      timeZone: "Asia/Kathmandu",
+      dateStyle: "full",
+      timeStyle: "short",
+    });
+
     const emailHtml = `
       <h2>New Membership Application</h2>
       <table style="border-collapse:collapse;width:100%;max-width:500px;">
@@ -33,6 +39,7 @@ serve(async (req) => {
         <tr><td style="padding:8px;font-weight:bold;">Address:</td><td style="padding:8px;">${escapeHtml(address)}</td></tr>
         <tr><td style="padding:8px;font-weight:bold;">Phone:</td><td style="padding:8px;">${escapeHtml(phone)}</td></tr>
         <tr><td style="padding:8px;font-weight:bold;">Message:</td><td style="padding:8px;">${escapeHtml(message || "—")}</td></tr>
+        <tr><td style="padding:8px;font-weight:bold;">Submitted:</td><td style="padding:8px;">${nepalTime} (Nepal Time)</td></tr>
       </table>
     `;
 

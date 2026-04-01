@@ -11,6 +11,7 @@ import LocationHours from "@/components/LocationHours";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import FloatingParticles from "@/components/FloatingParticles";
+import BodyBackground from "@/components/BodyBackground";
 
 const Index = () => {
   return (
@@ -18,8 +19,10 @@ const Index = () => {
       <FloatingParticles />
       <Navbar />
       <Hero />
-      <ScrollReveal>
-        <CategoryGrid />
+      <div className="relative">
+        <BodyBackground />
+        <ScrollReveal>
+          <CategoryGrid />
       </ScrollReveal>
       <ScrollReveal>
         <ValueProps />

@@ -100,6 +100,70 @@
   will-change: transform;
 }
 
+/* Body section floating orbs */
+@keyframes orb-float-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(8%, -12%) scale(1.08); }
+  50% { transform: translate(-5%, 8%) scale(0.95); }
+  75% { transform: translate(12%, 5%) scale(1.03); }
+}
+
+@keyframes orb-float-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  30% { transform: translate(-10%, 6%) scale(1.1); }
+  60% { transform: translate(6%, -8%) scale(0.92); }
+}
+
+@keyframes orb-float-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  40% { transform: translate(5%, 10%) scale(1.06); }
+  70% { transform: translate(-8%, -5%) scale(0.97); }
+}
+
+.body-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.04;
+  will-change: transform;
+}
+
+.body-orb-1 {
+  width: 40vw;
+  height: 40vw;
+  top: 10%;
+  left: -5%;
+  background: hsl(var(--primary));
+  animation: orb-float-1 35s ease-in-out infinite;
+}
+
+.body-orb-2 {
+  width: 35vw;
+  height: 35vw;
+  top: 40%;
+  right: -8%;
+  background: hsl(var(--accent));
+  animation: orb-float-2 45s ease-in-out infinite;
+  animation-delay: -10s;
+}
+
+.body-orb-3 {
+  width: 30vw;
+  height: 30vw;
+  bottom: 15%;
+  left: 30%;
+  background: hsl(6, 80%, 65%);
+  animation: orb-float-3 40s ease-in-out infinite;
+  animation-delay: -20s;
+}
+
+.body-grid-overlay {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.015) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
 .ambient-glow-1 {
   width: 50vw; height: 50vw;
   top: -10%; right: -10%;

@@ -48,6 +48,7 @@ const Index = () => {
         </ScrollReveal>
       </div>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };

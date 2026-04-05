@@ -12,6 +12,7 @@ import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import FloatingParticles from "@/components/FloatingParticles";
 import BodyBackground from "@/components/BodyBackground";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
   return (

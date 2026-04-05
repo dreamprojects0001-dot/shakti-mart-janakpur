@@ -21,28 +21,28 @@ const Index = () => {
       <Hero />
       <div className="relative">
         <BodyBackground />
-        <ScrollReveal>
+        <ScrollReveal variant="flip">
           <CategoryGrid />
         </ScrollReveal>
-        <ScrollReveal>
+        <ScrollReveal variant="tilt">
           <ValueProps />
         </ScrollReveal>
-        <ScrollReveal>
+        <ScrollReveal variant="zoom">
           <FeaturedOffers />
         </ScrollReveal>
-        <ScrollReveal>
+        <ScrollReveal variant="slide">
           <AboutStrip />
         </ScrollReveal>
-        <ScrollReveal>
+        <ScrollReveal variant="flip">
           <Testimonials />
         </ScrollReveal>
-        <ScrollReveal>
+        <ScrollReveal variant="tilt">
           <LoyaltyBanner />
         </ScrollReveal>
-        <ScrollReveal>
+        <ScrollReveal variant="zoom">
           <MembershipForm />
         </ScrollReveal>
-        <ScrollReveal>
+        <ScrollReveal variant="slide">
           <LocationHours />
         </ScrollReveal>
       </div>

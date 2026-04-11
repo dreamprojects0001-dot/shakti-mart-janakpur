@@ -72,10 +72,38 @@
 
 /* Card hover lift */
 .card-lift {
-  transition: transform 200ms ease-out;
+  transition: transform 300ms ease-out, box-shadow 300ms ease-out;
 }
 .card-lift:hover {
-  transform: translateY(-3px);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px -8px hsl(var(--primary) / 0.15);
+}
+
+/* Global subtle background animation */
+@keyframes bg-gradient-drift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-bg-drift {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--background)) 0%,
+    hsl(40, 30%, 94%) 25%,
+    hsl(var(--background)) 50%,
+    hsl(6, 30%, 95%) 75%,
+    hsl(var(--background)) 100%
+  );
+  background-size: 400% 400%;
+  animation: bg-gradient-drift 20s ease infinite;
+}
+
+/* Link hover glow */
+a.text-primary {
+  transition: all 300ms ease;
+}
+a.text-primary:hover {
+  text-shadow: 0 0 12px hsl(var(--primary) / 0.3);
 }
 
 /* Ambient background glow */

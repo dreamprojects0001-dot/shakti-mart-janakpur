@@ -48,7 +48,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-sm text-card mb-4">Contact</h4>
             <ul className="space-y-2.5 text-footer-muted text-sm">
-              <li>Katahariya-9, Rautahat</li>
+              <li>Katahariya-5, Rautahat</li>
               <li>Nepal</li>
               <li>9820064964</li>
               <li>shaktimart.com.np@gmail.com</li>

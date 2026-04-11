@@ -12,7 +12,7 @@ const LocationHours = () => {
             <div className="mt-8 space-y-5 text-sm">
               <div>
                 <h4 className="font-semibold text-foreground">Address</h4>
-                <p className="text-muted-foreground mt-1">Katahariya-9, Rautahat, Nepal</p>
+                <p className="text-muted-foreground mt-1">Katahariya-5, Rautahat, Nepal</p>
               </div>
               <div>
                 <h4 className="font-semibold text-foreground">Hours</h4>

@@ -16,7 +16,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
   return (
-    <div className="relative min-h-screen bg-background text-foreground font-body">
+    <div className="relative min-h-screen animate-bg-drift text-foreground font-body">
       <FloatingParticles />
       <Navbar />
       <Hero />

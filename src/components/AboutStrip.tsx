@@ -10,8 +10,8 @@ const AboutStrip = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Photo collage */}
-          <div className="grid grid-cols-2 gap-3 min-h-[300px] h-[400px] lg:h-[500px]">
-            <div className="rounded-lg overflow-hidden border border-border min-h-0">
+          <div className="grid grid-cols-2 gap-3 h-auto">
+            <div className="rounded-lg overflow-hidden border border-border aspect-[2/3]">
               <img
                 src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=400&h=600&fit=crop"
                 alt="Inside Shakti Mart"
@@ -19,10 +19,10 @@ const AboutStrip = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="rounded-lg overflow-hidden border border-border min-h-0">
+            <div className="rounded-lg overflow-hidden border border-border aspect-[2/3]">
               <img
-                src="https://images.unsplash.com/photo-1556740758-90de940a6ed6?w=400&h=600&fit=crop"
-                alt="Fresh products"
+                src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=400&h=600&fit=crop"
+                alt="Fresh products on shelves"
                 loading="lazy"
                 className="w-full h-full object-cover"
               />

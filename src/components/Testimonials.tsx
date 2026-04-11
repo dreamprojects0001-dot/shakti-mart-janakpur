@@ -1,18 +1,18 @@
 const reviews = [
   {
     text: "I've been shopping at Shakti Mart for over two years now. The prices are always fair and the staff remembers my usual order. It feels like home.",
-    name: "Sunita Devi",
-    area: "Ramanand Chowk",
+    name: "Hiralal Regimi",
+    area: "Junglesaiya",
   },
   {
     text: "Finally a store in Katahariya that's clean, well-organized, and has everything in stock. My kids love going there for snacks after school.",
-    name: "Rajesh Kumar Jha",
-    area: "Bhanu Chowk",
+    name: "Rajesh Kumar Sah",
+    area: "Birti",
   },
   {
     text: "Best mustard oil prices in town. I compared everywhere. Shakti Mart is genuinely affordable — and the quality is excellent.",
-    name: "Meena Kumari",
-    area: "Station Road",
+    name: "Sumit Kumar",
+    area: "Katahariya",
   },
 ];
 
